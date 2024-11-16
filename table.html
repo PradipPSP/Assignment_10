@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Different Kind of Table</title>
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        body{
+            height: 100vh;
+            background-color: bisque;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+
+        #tablesection{
+            width: 95%;
+            padding: 20px;
+            background-color: beige;
+            border: 1px solid;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        h1{
+            text-align: center;
+            font-size: 40px;
+            color: blueviolet;
+            text-decoration: underline;
+        }
+
+        #container{
+            width: 100%;
+            overflow: hidden;
+            
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 20px;
+            font-size: 18px;
+            text-align: left;
+            border-radius: 10px;
+            padding-right: 10px;
+        }
+        
+        thead {
+            background-color: tomato;
+            color: white;
+        }
+    
+        th, td {
+            padding: 12px;
+            border-bottom: 2px solid #ddd;
+        }
+    
+        td i {
+            margin-right: 5px;
+            color: #00796b;
+            /* Icon color */
+        }
+    
+        tbody tr:nth-child(even) {
+            background-color: burlywood;
+            /* Light gray for even rows */
+        }
+    
+        tbody tr:nth-child(odd) {
+            background-color: #ffffff;
+            /* White for odd rows */
+        }
+    
+        tbody tr:hover {
+            background-color: darkcyan;
+            color: #ffffff;
+            /* Light blue on hover */
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+    
+        th {
+            background-color: chocolate;
+            /* Dark teal for header */
+            color: white;
+            text-transform: uppercase;
+        }
+    
+       @media screen and (max-width: 768px) {
+            table {
+                font-size: 14px;
+                /* Smaller font size for mobile screens */
+            }
+
+
+        #simple{
+            width: 95%;
+            padding: 20px;
+            background-color: beige;
+            border: 1px solid;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <section id="tablesection">
+        <div>
+            <h1>Student Data Sheet</h1>
+        </div>
+
+        <div div id="container">
+
+            <table>
+                <thead>
+                    <tr>
+                        <th><i class="fas fa-id-card"></i> Student ID</th>
+                        <th > <i class="fas fa-font-awesome"></i> Student Name</th>
+                        <th> <i class="fas fa-envelope"></i> Mail ID</th>
+                        <th> <i class="fas fa-phone"></i> Phone Number</th>
+                        <th> <i class="fas fa-book"></i> Subjects</th>
+                        <th><i class="fa-solid fa-graduation-cap"></i> Grade</th>
+                        <th> <i class="fas fa-user"></i>Student Profile</th>
+                        <th> <i class="fas fa-pencil"></i> Udpate</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td><i class="fas fa-id-card"></i> 10000001</td>
+                        <td> <i class="fas fa-font-awesome"></i>Pradip Mondal</td>
+                        <td><i class="fas fa-envelope"></i> pradip.bdpost@gmail.com</td>
+                        <td><i class="fas fa-phone"></i> +880 1558985760</td>
+                        <td><i class="fas fa-book"></i> Accounting</td>
+                        <td><i class="fa-solid fa-graduation-cap"></i> 4.50 out of 5</td>
+                        <td style="text-align: center;"> <img src="image/man-avatar-profile.avif" alt="profile" width="35px"></td>
+                        <td> <button> <i class="fas fa-edit"></i></button></td>
+                    </tr>
+
+                    <tr>
+                        <td><i class="fas fa-id-card"></i> 10000002</td>
+                        <td> <i class="fas fa-font-awesome"></i>Pratim Mondal</td>
+                        <td><i class="fas fa-envelope"></i> pratim.mondal@expamle.com</td>
+                        <td><i class="fas fa-phone"></i> +880 1558985760</td>
+                        <td><i class="fas fa-book"></i> Microbiology </td>
+                        <td><i class="fa-solid fa-graduation-cap"></i> 5 out of 5</td>
+                        <td style="text-align: center;"> <img src="image/man-avatar-profile.avif" alt="profile" width="35px"></td>
+                        <td> <button> <i class="fas fa-edit"></i></button></td>
+                    </tr>
+
+                    <tr>
+                        <td><i class="fas fa-id-card"></i> 10000003</td>
+                        <td> <i class="fas fa-font-awesome"></i>Rajdeep Mondal</td>
+                        <td><i class="fas fa-envelope"></i> rajdeep.mondal@example.com</td>
+                        <td><i class="fas fa-phone"></i> +880 1558985760</td>
+                        <td><i class="fas fa-book"></i> Biochemistry</td>
+                        <td><i class="fa-solid fa-graduation-cap"></i> 5 out of 5</td>
+                        <td style="text-align: center;"> <img src="image/man-avatar-profile.avif" alt="profile" width="35px"></td>
+                        <td> <button> <i class="fas fa-edit"></i></button></td>
+                    </tr>
+
+                    <tr>
+                        <td><i class="fas fa-id-card"></i> 10000004</td>
+                        <td> <i class="fas fa-font-awesome"></i>Suchitra Mondal</td>
+                        <td><i class="fas fa-envelope"></i> suchitra.mondal@example.com</td>
+                        <td><i class="fas fa-phone"></i> +880 1558985760</td>
+                        <td><i class="fas fa-book"></i>Bengali</td>
+                        <td><i class="fa-solid fa-graduation-cap"></i> 4.95 out of 5</td>
+                        <td style="text-align: center;"> <img src="image/man-avatar-profile.avif" alt="profile" width="35px"></td>
+                        <td> <button> <i class="fas fa-edit"></i></button></td>
+                    </tr>
+
+                    <tr>
+                        <td><i class="fas fa-id-card"></i> 10000005</td>
+                        <td> <i class="fas fa-font-awesome"></i>Sujan Mondal</td>
+                        <td><i class="fas fa-envelope"></i> sujan.mondal@example.com</td>
+                        <td><i class="fas fa-phone"></i> +880 1558985760</td>
+                        <td><i class="fas fa-book"></i> Social Seicnce</td>
+                        <td><i class="fa-solid fa-graduation-cap"></i> 4.70 out of 5</td>
+                        <td style="text-align: center;"> <img src="image/man-avatar-profile.avif" alt="profile" width="35px"></td>
+                        <td> <button> <i class="fas fa-edit"></i></button></td>
+                    </tr>
+
+                    <tr>
+                        <td><i class="fas fa-id-card"></i> 10000006</td>
+                        <td> <i class="fas fa-font-awesome"></i>Mrinal Mondal</td>
+                        <td><i class="fas fa-envelope"></i> mrinal.mondal@example.com</td>
+                        <td><i class="fas fa-phone"></i> +880 1558985760</td>
+                        <td><i class="fas fa-book"></i> Management</td>
+                        <td><i class="fa-solid fa-graduation-cap"></i> 4.40 out of 5</td>
+                        <td style="text-align: center;"> <img src="image/man-avatar-profile.avif" alt="profile" width="35px"></td>
+                        <td> <button> <i class="fas fa-edit"></i></button></td>
+                    </tr>
+
+                    <tr>
+                        <td><i class="fas fa-id-card"></i> 10000007</td>
+                        <td> <i class="fas fa-font-awesome"></i>Bishwajit Mondal</td>
+                        <td><i class="fas fa-envelope"></i> bishwajit.mondal@example.com</td>
+                        <td><i class="fas fa-phone"></i> +880 1558985760</td>
+                        <td><i class="fas fa-book"></i> History</td>
+                        <td><i class="fa-solid fa-graduation-cap"></i> 4.60 out of 5</td>
+                        <td style="text-align: center;"> <img src="image/man-avatar-profile.avif" alt="profile" width="35px"></td>
+                        <td> <button> <i class="fas fa-edit"></i></button></td>
+                    </tr>
+
+                    <tr>
+                        <td><i class="fas fa-id-card"></i> 10000008</td>
+                        <td> <i class="fas fa-font-awesome"></i>Bickrom Mondal</td>
+                        <td><i class="fas fa-envelope"></i> bickrom.mondal@example.com</td>
+                        <td><i class="fas fa-phone"></i> +880 1558985760</td>
+                        <td><i class="fas fa-book"></i> Economices</td>
+                        <td><i class="fa-solid fa-graduation-cap"></i> 4.80 out of 5</td>
+                        <td style="text-align: center;"> <img src="image/man-avatar-profile.avif" alt="profile" width="35px"></td>
+                        <td> <button> <i class="fas fa-edit"></i></button></td>
+                    </tr>
+
+                    <tr>
+                        <td><i class="fas fa-id-card"></i> 10000009</td>
+                        <td> <i class="fas fa-font-awesome"></i>Amolendu Mondal</td>
+                        <td><i class="fas fa-envelope"></i> anolendu.mondal@example.com</td>
+                        <td><i class="fas fa-phone"></i> +880 1558985760</td>
+                        <td><i class="fas fa-book"></i> Pharmacology</td>
+                        <td><i class="fa-solid fa-graduation-cap"></i> 4.20 out of 5</td>
+                        <td style="text-align: center;"> <img src="image/man-avatar-profile.avif" alt="profile" width="35px"></td>
+                        <td> <button> <i class="fas fa-edit"></i></button></td>
+                    </tr>
+
+                    <tr>
+                        <td><i class="fas fa-id-card"></i> 10000010</td>
+                        <td> <i class="fas fa-font-awesome"></i>Pranesh Mondal</td>
+                        <td><i class="fas fa-envelope"></i> pranesh.mondal@example.com</td>
+                        <td><i class="fas fa-phone"></i> +880 1558985760</td>
+                        <td><i class="fas fa-book"></i> Computer Science</td>
+                        <td><i class="fa-solid fa-graduation-cap"></i> 4.30 out of 5</td>
+                        <td style="text-align: center;"> <img src="image/man-avatar-profile.avif" alt="profile" width="35px"></td>
+                        <td> <button> <i class="fas fa-edit"></i></button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div> <hr>
+
+        <div id="simple">
+            <div>
+                <h1>Simple Table</h1>   
+            </div>
+
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Adddress</th>
+                            <th>Division</th>
+                            <th>District</th>
+                            <th>Police Station</th>
+                            <th>Post Office</th>
+                            <th>Post Code</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Pradip Mondal</td>
+                            <td>33, Khalishpur Road, Boyra, Khulna</td>
+                            <td>Khulna</td>
+                            <td>Satkhira</td>
+                            <td>Patkelghata</td>
+                            <td>Binerpota</td>
+                            <td>9400</td>
+                        </tr>
+
+                        <tr>
+                            <td>Moynul Islam</td>
+                            <td>33, Khalishpur Road, Boyra, Khulna</td>
+                            <td>Khulna</td>
+                            <td>Satkhira</td>
+                            <td>Patkelghata</td>
+                            <td>Binerpota</td>
+                            <td>9400</td>
+                        </tr>
+
+                        <tr>
+                            <td>Bickrom Mondal</td>
+                            <td>33, Khalishpur Road, Boyra, Khulna</td>
+                            <td>Khulna</td>
+                            <td>Satkhira</td>
+                            <td>Patkelghata</td>
+                            <td>Binerpota</td>
+                            <td>9400</td>
+                        </tr>
+
+                        <tr>
+                            <td>Gloak Mondal</td>
+                            <td>33, Khalishpur Road, Boyra, Khulna</td>
+                            <td>Khulna</td>
+                            <td>Satkhira</td>
+                            <td>Patkelghata</td>
+                            <td>Binerpota</td>
+                            <td>9400</td>
+                        </tr>
+
+                        <tr>
+                            <td>Prokash Mondal</td>
+                            <td>33, Khalishpur Road, Boyra, Khulna</td>
+                            <td>Khulna</td>
+                            <td>Satkhira</td>
+                            <td>Patkelghata</td>
+                            <td>Binerpota</td>
+                            <td>9400</td>
+                        </tr>
+
+                        <tr>
+                            <td>Pratim Mondal</td>
+                            <td>33, Khalishpur Road, Boyra, Khulna</td>
+                            <td>Khulna</td>
+                            <td>Satkhira</td>
+                            <td>Patkelghata</td>
+                            <td>Binerpota</td>
+                            <td>9400</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+        </div>
+    </section> 
+
+    
+</body>
+</html>
